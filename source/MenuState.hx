@@ -39,11 +39,8 @@ class MenuState extends FlxState
 		TitleText.setBorderStyle(OUTLINE, FlxColor.RED, 1);
 		add(TitleText);
 		
-		#if flash
-		FlxG.sound.playMusic("assets/music/IntroMusic.mp3", FlxG.sound.volume, true);
-		#else
 		FlxG.sound.playMusic("assets/music/IntroMusic.ogg", FlxG.sound.volume, true);
-		#end
+
 		FlxG.mouse.visible = true;
 	}
 

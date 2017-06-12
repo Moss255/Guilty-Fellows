@@ -9,8 +9,6 @@ class DialogManager
 
     public function new(FileName:String)
     {
-        //this.Text = new Array<String>();
-
         this.fileNameToLoad = FileName;
     }
 
@@ -21,10 +19,8 @@ class DialogManager
 
         for (i in 0...8)
         {
-            trace(jsonData[i].id == NewID);
             if (jsonData[i].id == NewID)
             {
-                trace(jsonData[i]);
                 return jsonData[i];
 
             }
@@ -32,22 +28,3 @@ class DialogManager
         return null;
     }
 }
-
-//
-// IF JSON doesn't work out, check below
-//
-
-// var xmlOutput = Assets.getText(this.fileNameToLoad);
-
-//         var xmlData = Xml.parse(xmlOutput);
-//         for (i in xmlData.elements())
-//         {
-//             var fast:Fast = new Fast(i);
-//             trace(fast.hasNode.name);
-//             trace(fast.node.name.innerData);
-//             trace(fast.node.text.innerData);
-//             // trace(var id = person.ID);
-//             // trace(var name = person.name.innerData());
-//             // trace(var text = person.text.innerData());
-           
-//         }

@@ -29,11 +29,8 @@ class IntroState extends FlxState
 		introText[5] = "You only get 3 shots to guess who it is";
 		introText[6] = "Hopefully you can find the real culpurt";
 
-		#if flash
-		introTxtBox = new TextBox("???", introText, "assets/sounds/Text.mp3", 8, (480 - (480 / 4)) - 200, 300);
-		#else
 		introTxtBox = new TextBox("???", introText, "assets/sounds/Text.ogg", 8, (480 - (480 /4 )) - 200, 300);
-		#end
+
 		add(introTxtBox);
 		
 		introTxtBox.play();

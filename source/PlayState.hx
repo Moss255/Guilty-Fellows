@@ -40,11 +40,9 @@ class PlayState extends FlxState
 			button.scale.y = 1.5;
 		}
 		Peers = new Array<NPC>();
-		#if flash
-		FlxG.sound.playMusic("assets/music/Factory.mp3", 0.125, true);
-		#else
+
 		FlxG.sound.playMusic("assets/music/Factory.ogg", 0.125, true);
-		#end
+		
 		loadSubjects();
 	}
 

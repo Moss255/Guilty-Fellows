@@ -19,11 +19,9 @@ class LoseState extends FlxState
         TextArray[1] = "THAT OUTRAGEOUS!";
         TextArray[2] = "We are immidately taking you off the case!";
 
-        #if flash
-        this.TxtBox = new TextBox("???", TextArray, "assets/sounds/Text.mp3", 8, (480 - (480 / 4)) - 200, 300);
-        #else
+
         this.TxtBox = new TextBox("???", TextArray, "assets/sounds/Text.ogg", 8, (480 - (480 / 4)) - 200, 300);
-        #end
+        
         add(this.TxtBox);
 
         this.TxtBox.play();
