@@ -64,15 +64,7 @@ class DefaultAssetLibrary extends AssetLibrary {
 		
 		
 		
-		
-		
-		
-		
-		
-		
-		
 		Font.registerFont (__ASSET__assets_data_pressstart2p_ttf);
-		
 		
 		
 		
@@ -86,14 +78,6 @@ class DefaultAssetLibrary extends AssetLibrary {
 		#if (windows || mac || linux)
 		
 		var useManifest = false;
-		useManifest = true;
-		useManifest = true;
-		useManifest = true;
-		useManifest = true;
-		useManifest = true;
-		useManifest = true;
-		useManifest = true;
-		useManifest = true;
 		useManifest = true;
 		useManifest = true;
 		useManifest = true;
@@ -616,15 +600,7 @@ class DefaultAssetLibrary extends AssetLibrary {
 		
 		
 		
-		
-		
-		
-		
-		
-		
-		
 		openfl.text.Font.registerFont (__ASSET__OPENFL__assets_data_pressstart2p_ttf);
-		
 		
 		
 		
@@ -638,32 +614,18 @@ class DefaultAssetLibrary extends AssetLibrary {
 		
 		#if flash
 		
-		path.set ("assets/images/textbox-smaller.png", "assets/images/textbox-smaller.png");
-		type.set ("assets/images/textbox-smaller.png", AssetType.IMAGE);
 		path.set ("assets/images/3.gif", "assets/images/3.gif");
 		type.set ("assets/images/3.gif", AssetType.IMAGE);
-		path.set ("assets/images/textbox.png", "assets/images/textbox.png");
-		type.set ("assets/images/textbox.png", AssetType.IMAGE);
-		path.set ("assets/images/images-go-here.txt", "assets/images/images-go-here.txt");
-		type.set ("assets/images/images-go-here.txt", AssetType.TEXT);
-		path.set ("assets/music/Factory.mp3", "assets/music/Factory.mp3");
-		type.set ("assets/music/Factory.mp3", AssetType.MUSIC);
+		path.set ("assets/images/Textbox.png", "assets/images/Textbox.png");
+		type.set ("assets/images/Textbox.png", AssetType.IMAGE);
 		path.set ("assets/music/Factory.ogg", "assets/music/Factory.ogg");
 		type.set ("assets/music/Factory.ogg", AssetType.MUSIC);
-		path.set ("assets/music/IntroMusic.mp3", "assets/music/IntroMusic.mp3");
-		type.set ("assets/music/IntroMusic.mp3", AssetType.MUSIC);
 		path.set ("assets/music/IntroMusic.ogg", "assets/music/IntroMusic.ogg");
 		type.set ("assets/music/IntroMusic.ogg", AssetType.MUSIC);
-		path.set ("assets/music/music-goes-here.txt", "assets/music/music-goes-here.txt");
-		type.set ("assets/music/music-goes-here.txt", AssetType.TEXT);
 		path.set ("assets/sounds/LowText.ogg", "assets/sounds/LowText.ogg");
 		type.set ("assets/sounds/LowText.ogg", AssetType.SOUND);
-		path.set ("assets/sounds/Text.mp3", "assets/sounds/Text.mp3");
-		type.set ("assets/sounds/Text.mp3", AssetType.MUSIC);
 		path.set ("assets/sounds/Text.ogg", "assets/sounds/Text.ogg");
 		type.set ("assets/sounds/Text.ogg", AssetType.SOUND);
-		path.set ("assets/sounds/sounds-go-here.txt", "assets/sounds/sounds-go-here.txt");
-		type.set ("assets/sounds/sounds-go-here.txt", AssetType.TEXT);
 		path.set ("assets/data/PressStart2P.woff", "assets/data/PressStart2P.woff");
 		type.set ("assets/data/PressStart2P.woff", AssetType.BINARY);
 		path.set ("assets/data/Characters.json", "assets/data/Characters.json");
@@ -672,8 +634,6 @@ class DefaultAssetLibrary extends AssetLibrary {
 		type.set ("assets/data/PressStart2P.ttf", AssetType.FONT);
 		path.set ("assets/data/PressStart2P.eot", "assets/data/PressStart2P.eot");
 		type.set ("assets/data/PressStart2P.eot", AssetType.BINARY);
-		path.set ("assets/data/data-goes-here.txt", "assets/data/data-goes-here.txt");
-		type.set ("assets/data/data-goes-here.txt", AssetType.TEXT);
 		path.set ("assets/data/PressStart2P.svg", "assets/data/PressStart2P.svg");
 		type.set ("assets/data/PressStart2P.svg", AssetType.TEXT);
 		className.set ("flixel/sounds/beep.ogg", __ASSET__flixel_sounds_beep_ogg);
@@ -693,45 +653,24 @@ class DefaultAssetLibrary extends AssetLibrary {
 		#elseif html5
 		
 		var id;
-		id = "assets/images/textbox-smaller.png";
-		path.set (id, id);
-		type.set (id, AssetType.IMAGE);
 		id = "assets/images/3.gif";
 		path.set (id, id);
 		type.set (id, AssetType.IMAGE);
-		id = "assets/images/textbox.png";
+		id = "assets/images/Textbox.png";
 		path.set (id, id);
 		type.set (id, AssetType.IMAGE);
-		id = "assets/images/images-go-here.txt";
-		path.set (id, id);
-		type.set (id, AssetType.TEXT);
-		id = "assets/music/Factory.mp3";
-		path.set (id, id);
-		type.set (id, AssetType.MUSIC);
 		id = "assets/music/Factory.ogg";
-		path.set (id, id);
-		type.set (id, AssetType.MUSIC);
-		id = "assets/music/IntroMusic.mp3";
 		path.set (id, id);
 		type.set (id, AssetType.MUSIC);
 		id = "assets/music/IntroMusic.ogg";
 		path.set (id, id);
 		type.set (id, AssetType.MUSIC);
-		id = "assets/music/music-goes-here.txt";
-		path.set (id, id);
-		type.set (id, AssetType.TEXT);
 		id = "assets/sounds/LowText.ogg";
 		path.set (id, id);
 		type.set (id, AssetType.SOUND);
-		id = "assets/sounds/Text.mp3";
-		path.set (id, id);
-		type.set (id, AssetType.MUSIC);
 		id = "assets/sounds/Text.ogg";
 		path.set (id, id);
 		type.set (id, AssetType.SOUND);
-		id = "assets/sounds/sounds-go-here.txt";
-		path.set (id, id);
-		type.set (id, AssetType.TEXT);
 		id = "assets/data/PressStart2P.woff";
 		path.set (id, id);
 		type.set (id, AssetType.BINARY);
@@ -744,9 +683,6 @@ class DefaultAssetLibrary extends AssetLibrary {
 		id = "assets/data/PressStart2P.eot";
 		path.set (id, id);
 		type.set (id, AssetType.BINARY);
-		id = "assets/data/data-goes-here.txt";
-		path.set (id, id);
-		type.set (id, AssetType.TEXT);
 		id = "assets/data/PressStart2P.svg";
 		path.set (id, id);
 		type.set (id, AssetType.TEXT);
@@ -799,17 +735,9 @@ class DefaultAssetLibrary extends AssetLibrary {
 		useManifest = true;
 		useManifest = true;
 		useManifest = true;
-		useManifest = true;
-		useManifest = true;
-		useManifest = true;
-		useManifest = true;
-		useManifest = true;
-		useManifest = true;
-		useManifest = true;
 		
 		className.set ("assets/data/PressStart2P.ttf", __ASSET__assets_data_pressstart2p_ttf);
 		type.set ("assets/data/PressStart2P.ttf", AssetType.FONT);
-		useManifest = true;
 		useManifest = true;
 		useManifest = true;
 		
@@ -1559,14 +1487,6 @@ class DefaultAssetLibrary extends AssetLibrary {
 
 
 
-
-
-
-
-
-
-
-
 @:keep @:bind #if display private #end class __ASSET__flixel_sounds_beep_ogg extends null { }
 @:keep @:bind #if display private #end class __ASSET__flixel_sounds_flixel_ogg extends null { }
 @:keep @:bind #if display private #end class __ASSET__flixel_fonts_nokiafc22_ttf extends null { }
@@ -1585,15 +1505,7 @@ class DefaultAssetLibrary extends AssetLibrary {
 
 
 
-
-
-
-
-
-
-
 @:keep #if display private #end class __ASSET__assets_data_pressstart2p_ttf extends lime.text.Font { public function new () { super (); name = "Press Start 2P Regular"; } } 
-
 
 
 

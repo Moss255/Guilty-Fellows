@@ -67,7 +67,7 @@ class TextBox extends FlxState
 
 		this.textBox = new FlxSprite(X - 150, Y - 150);
 
-		this.textBox.loadGraphic("assets/images/textbox-smaller.png");
+		this.textBox.loadGraphic("assets/images/Textbox.png");
 
 		
 		this.measureText = new FlxText(X, Y, 300, TextToDisplay[DialogPosition], fontSize);

@@ -16,7 +16,7 @@ class NPC extends FlxSprite
 	private var txtbox:TextBox;
 	private var Iscontact:Bool;
 	private var dialogControl:DialogManager;
-	private var IsSuspect:Bool
+	private var IsSuspect:Bool;
 
 	
 	public function new(NewID:Int) 

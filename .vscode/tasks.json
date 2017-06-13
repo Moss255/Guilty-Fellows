@@ -25,7 +25,6 @@
 			"taskName": "html5 release",
 			"suppressTaskName": true,
 			"args": ["test", "html5"],
-            "isBuildCommand": true,
 			"problemMatcher": "$haxe"
             
 		},
@@ -45,6 +44,7 @@
 			"taskName": "neko debug",
 			"suppressTaskName": true,
 			"args": ["test", "neko", "-debug"],
+			"isBuildCommand": true,
 			"problemMatcher": "$haxe"
 		},
 		{

@@ -128,7 +128,7 @@ class ApplicationMain {
 				
 			},
 			640, 480, 
-			30, 
+			60, 
 			0,
 			(true ? flash.Lib.HARDWARE : 0) |
 			(false ? flash.Lib.ALLOW_SHADERS : 0) |
@@ -515,10 +515,10 @@ class ApplicationMain {
 		
 		config = {
 			
-			build: "3",
+			build: "8",
 			company: "Jack",
 			file: "Final-GuiltyFellows",
-			fps: 30,
+			fps: 60,
 			name: "Final - Guilty Fellows",
 			orientation: "landscape",
 			packageName: "com.example.myapp",
