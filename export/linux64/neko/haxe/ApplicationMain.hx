@@ -515,7 +515,7 @@ class ApplicationMain {
 		
 		config = {
 			
-			build: "8",
+			build: "9",
 			company: "Jack",
 			file: "Final-GuiltyFellows",
 			fps: 60,
