@@ -39,7 +39,7 @@ class NPC extends FlxSprite
 		this.IsSuspect = tempNPC.suspect;
 
 		//this.txtbox = new TextBox(this.Name, this.Text, "assets/sounds/Text.ogg", 9, (480 - (480 / 4)) - 150, 300);
-		this.txtbox = new TextBox(this.Name, this.Text, "assets/sounds/Text.ogg", 9, 110, 350);
+		this.txtbox = new TextBox(this.Name, this.Text, "assets/sounds/Text.ogg", 9, 110, 320);
 	}
 
 	public function getName():String

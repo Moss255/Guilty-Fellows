@@ -65,6 +65,7 @@ class DefaultAssetLibrary extends AssetLibrary {
 		
 		
 		
+		
 		Font.registerFont (__ASSET__assets_data_pressstart2p_ttf);
 		
 		
@@ -79,6 +80,7 @@ class DefaultAssetLibrary extends AssetLibrary {
 		#if (windows || mac || linux)
 		
 		var useManifest = false;
+		useManifest = true;
 		useManifest = true;
 		useManifest = true;
 		useManifest = true;
@@ -603,6 +605,7 @@ class DefaultAssetLibrary extends AssetLibrary {
 		
 		
 		
+		
 		openfl.text.Font.registerFont (__ASSET__OPENFL__assets_data_pressstart2p_ttf);
 		
 		
@@ -627,6 +630,8 @@ class DefaultAssetLibrary extends AssetLibrary {
 		type.set ("assets/music/Factory.ogg", AssetType.MUSIC);
 		path.set ("assets/music/IntroMusic.ogg", "assets/music/IntroMusic.ogg");
 		type.set ("assets/music/IntroMusic.ogg", AssetType.MUSIC);
+		path.set ("assets/sounds/Fail.ogg", "assets/sounds/Fail.ogg");
+		type.set ("assets/sounds/Fail.ogg", AssetType.SOUND);
 		path.set ("assets/sounds/LowText.ogg", "assets/sounds/LowText.ogg");
 		type.set ("assets/sounds/LowText.ogg", AssetType.SOUND);
 		path.set ("assets/sounds/Text.ogg", "assets/sounds/Text.ogg");
@@ -673,6 +678,9 @@ class DefaultAssetLibrary extends AssetLibrary {
 		id = "assets/music/IntroMusic.ogg";
 		path.set (id, id);
 		type.set (id, AssetType.MUSIC);
+		id = "assets/sounds/Fail.ogg";
+		path.set (id, id);
+		type.set (id, AssetType.SOUND);
 		id = "assets/sounds/LowText.ogg";
 		path.set (id, id);
 		type.set (id, AssetType.SOUND);
@@ -735,6 +743,7 @@ class DefaultAssetLibrary extends AssetLibrary {
 		#if (windows || mac || linux)
 		
 		var useManifest = false;
+		useManifest = true;
 		useManifest = true;
 		useManifest = true;
 		useManifest = true;
@@ -1497,6 +1506,7 @@ class DefaultAssetLibrary extends AssetLibrary {
 
 
 
+
 @:keep @:bind #if display private #end class __ASSET__flixel_sounds_beep_ogg extends null { }
 @:keep @:bind #if display private #end class __ASSET__flixel_sounds_flixel_ogg extends null { }
 @:keep @:bind #if display private #end class __ASSET__flixel_fonts_nokiafc22_ttf extends null { }
@@ -1506,6 +1516,7 @@ class DefaultAssetLibrary extends AssetLibrary {
 
 
 #elseif html5
+
 
 
 

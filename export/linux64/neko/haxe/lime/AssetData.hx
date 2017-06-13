@@ -26,6 +26,8 @@ class AssetData {
 			type.set ("assets/music/Factory.ogg", Reflect.field (AssetType, "music".toUpperCase ()));
 			path.set ("assets/music/IntroMusic.ogg", "assets/music/IntroMusic.ogg");
 			type.set ("assets/music/IntroMusic.ogg", Reflect.field (AssetType, "music".toUpperCase ()));
+			path.set ("assets/sounds/Fail.ogg", "assets/sounds/Fail.ogg");
+			type.set ("assets/sounds/Fail.ogg", Reflect.field (AssetType, "sound".toUpperCase ()));
 			path.set ("assets/sounds/LowText.ogg", "assets/sounds/LowText.ogg");
 			type.set ("assets/sounds/LowText.ogg", Reflect.field (AssetType, "sound".toUpperCase ()));
 			path.set ("assets/sounds/Text.ogg", "assets/sounds/Text.ogg");

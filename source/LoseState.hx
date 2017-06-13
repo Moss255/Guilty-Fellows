@@ -20,7 +20,7 @@ class LoseState extends FlxState
         TextArray[2] = "We are immidately taking you off the case!";
 
 
-        this.TxtBox = new TextBox("???", TextArray, "assets/sounds/Text.ogg", 8, (480 - (480 / 4)) - 200, 300);
+        this.TxtBox = new TextBox("???", TextArray, "assets/sounds/Text.ogg", 9, 110, 320);
         
         add(this.TxtBox);
 

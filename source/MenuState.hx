@@ -41,7 +41,8 @@ class MenuState extends FlxState
 		
 		FlxG.sound.playMusic("assets/music/IntroMusic.ogg", FlxG.sound.volume, true);
 
-		FlxG.mouse.visible = true;
+		FlxG.mouse.useSystemCursor = true;
+
 	}
 
 	private function playButtonPressed():Void

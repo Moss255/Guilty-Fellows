@@ -21,7 +21,7 @@ class WinState extends FlxState
         TextArray[2] = "You may have got me...";
         TextArray[3] = "But you will never stop our plans!";
 
-        this.TxtBox = new TextBox("Emma", TextArray, "assets/sounds/Text.ogg", 8, (480 - (480 / 4)) - 200, 300);
+        this.TxtBox = new TextBox("Emma", TextArray, "assets/sounds/Text.ogg", 9, 110, 320);
 
         add(this.TxtBox);
 

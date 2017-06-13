@@ -41,6 +41,7 @@ class IntroState extends FlxState
 		helpText.y = 480 - 30;
 		helpText.setFormat("assets/data/PressStart2P.ttf", 11, FlxColor.WHITE, CENTER);
 		add(helpText);
+
 	}
 	
 	public override function update(elapsed:Float):Void

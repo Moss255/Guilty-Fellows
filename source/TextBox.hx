@@ -75,7 +75,7 @@ class TextBox extends FlxState
 
 		this.fontText = new FlxTypeText(X, Y, 400, TextToDisplay[DialogPosition], fontSize, false);
 
-		this.fontText.setFormat("assets/data/PressStart2P.ttf", fontSize, FlxColor.BLUE);
+		this.fontText.setFormat("assets/data/PressStart2P.ttf", fontSize, FlxColor.fromRGB(87, 65, 47, 255));
 		
 		this.txtFinshed = false;
 		
@@ -130,7 +130,7 @@ class TextBox extends FlxState
 		this.fontText = null;
 
 		this.fontText = new FlxTypeText(X, Y, 400, TextToDisplay[DialogPosition], fontSize, false);
-		this.fontText.setFormat("assets/data/PressStart2P.ttf", fontSize, FlxColor.BLUE);
+		this.fontText.setFormat("assets/data/PressStart2P.ttf", fontSize, FlxColor.fromRGB(87, 65, 47, 255));
 
 		add(this.fontText);
 

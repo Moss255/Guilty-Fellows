@@ -32,7 +32,7 @@ class PlayState extends FlxState
 		switchButton[0] = new FlxButton(20, 480 / 2, "<<", switchSubjectleft);
 		switchButton[1] = new FlxButton(640 - 100, 480 / 2, ">>", switchSubjectright);
 		//switchButton[2] = new FlxButton(640 / 2, 480 - 50, "Hear statement", playStatement);
-		switchButton[3] = new FlxButton(640 / 2 + 100, 480 - 50, "Suspect!", suspectButton);
+		switchButton[2] = new FlxButton(640 / 2 + 100, 480 - 50, "Suspect!", suspectButton);
 		for (button in switchButton) 
 		{
 			add(button);
@@ -166,7 +166,7 @@ class PlayState extends FlxState
 	{
 		super.update(elapsed);
 
-		if (FlxG.mouse.justReleased)
+		if (FlxG.mouse.justReleased && !switchButton[2].overlapsPoint(FlxG.mouse.getScreenPosition()))
         {
 			playStatement();
 			if (suspectTxtBox != null)
