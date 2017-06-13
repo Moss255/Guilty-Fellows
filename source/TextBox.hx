@@ -65,30 +65,17 @@ class TextBox extends FlxState
 		this.textblip.loadStream(SoundFile, true, false);
 		add(this.textblip);
 
-		this.textBox = new FlxSprite(X - 150, Y - 150);
+		this.textBox = new FlxSprite(X - 40, Y - 60, "assets/images/Textbox-long.png");
 
-		this.textBox.loadGraphic("assets/images/Textbox.png");
 
 		
 		this.measureText = new FlxText(X, Y, 300, TextToDisplay[DialogPosition], fontSize);
 		this.measureText.setFormat("assets/data/PressStart2P.ttf", fontSize, FlxColor.WHITE);
-
 		
 
-		//this.textBox = new FlxSprite(X - 15, Y - 15);
-		
-		//this.textBox.makeGraphic(Std.int(measureText.width) + 30, Std.int(measureText.height) + 30, FlxColor.BLUE);
-		//this.textBox.loadGraphic("assets/images/textbox.png", 200, 300);
-		
-	this.textBox.setGraphicSize(Std.int(measureText.width) + 50, 0);
-
-		this.fontText = new FlxTypeText(X, Y, 250, TextToDisplay[DialogPosition], fontSize, false);
+		this.fontText = new FlxTypeText(X, Y, 400, TextToDisplay[DialogPosition], fontSize, false);
 
 		this.fontText.setFormat("assets/data/PressStart2P.ttf", fontSize, FlxColor.BLUE);
-
-		// this.textBoxOutline = new FlxSprite(textBox.x - 5, textBox.y - 5);
-		
-		// this.textBoxOutline.makeGraphic(Std.int(textBox.width) + 10, Std.int(textBox.height) + 10, FlxColor.GRAY);
 		
 		this.txtFinshed = false;
 		
@@ -96,7 +83,6 @@ class TextBox extends FlxState
 
 	public function play():Void
 	{
-		//add(this.textBoxOutline);
 		add(this.textBox);
 		add(this.fontText);
 		
@@ -143,7 +129,7 @@ class TextBox extends FlxState
 		remove(this.fontText);
 		this.fontText = null;
 
-		this.fontText = new FlxTypeText(X, Y, 250, TextToDisplay[DialogPosition], fontSize, false);
+		this.fontText = new FlxTypeText(X, Y, 400, TextToDisplay[DialogPosition], fontSize, false);
 		this.fontText.setFormat("assets/data/PressStart2P.ttf", fontSize, FlxColor.BLUE);
 
 		add(this.fontText);
@@ -154,7 +140,7 @@ class TextBox extends FlxState
 	{
 		remove(this.textBox);
 		remove(this.fontText);
-		//remove(this.textBoxOutline);
+
 		this.textblip.stop();
 		this.DialogPosition = 0;
 	}

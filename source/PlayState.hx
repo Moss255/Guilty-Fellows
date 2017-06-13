@@ -29,9 +29,9 @@ class PlayState extends FlxState
 		NPCcounter = 0;
 
 		switchButton = new Array<FlxButton>();
-		switchButton[0] = new FlxButton(20, 480 / 2, "Previous suspect", switchSubjectleft);
-		switchButton[1] = new FlxButton(640 - 100, 480 / 2, "Next suspect", switchSubjectright);
-		switchButton[2] = new FlxButton(640 / 2, 480 - 50, "Hear statement", playStatement);
+		switchButton[0] = new FlxButton(20, 480 / 2, "<<", switchSubjectleft);
+		switchButton[1] = new FlxButton(640 - 100, 480 / 2, ">>", switchSubjectright);
+		//switchButton[2] = new FlxButton(640 / 2, 480 - 50, "Hear statement", playStatement);
 		switchButton[3] = new FlxButton(640 / 2 + 100, 480 - 50, "Suspect!", suspectButton);
 		for (button in switchButton) 
 		{
@@ -63,11 +63,9 @@ class PlayState extends FlxState
 				lives -= 1;
 				var txtArray:Array<String> = new Array<String>();
 				txtArray[0] = "You have to be kidding! It can't be them";
-				#if flash
-				this.suspectTxtBox = new TextBox("???", txtArray, "assets/sounds/Text.mp3", 8, (480 - (480 / 4)) - 200, 300);
-				#else
-				this.suspectTxtBox = new TextBox("???", txtArray, "assets/sounds/Text.ogg", 8, (480 - (480 / 4)) - 200, 300);
-				#end
+
+				this.suspectTxtBox = new TextBox("???", txtArray, "assets/sounds/Text.ogg", 9, 110, 320);
+
 				add(suspectTxtBox);
 				suspectTxtBox.play();
 
@@ -170,6 +168,7 @@ class PlayState extends FlxState
 
 		if (FlxG.mouse.justReleased)
         {
+			playStatement();
 			if (suspectTxtBox != null)
 			{
 				if (suspectTxtBox.IsFinished())

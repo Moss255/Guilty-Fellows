@@ -64,6 +64,7 @@ class DefaultAssetLibrary extends AssetLibrary {
 		
 		
 		
+		
 		Font.registerFont (__ASSET__assets_data_pressstart2p_ttf);
 		
 		
@@ -78,6 +79,7 @@ class DefaultAssetLibrary extends AssetLibrary {
 		#if (windows || mac || linux)
 		
 		var useManifest = false;
+		useManifest = true;
 		useManifest = true;
 		useManifest = true;
 		useManifest = true;
@@ -600,6 +602,7 @@ class DefaultAssetLibrary extends AssetLibrary {
 		
 		
 		
+		
 		openfl.text.Font.registerFont (__ASSET__OPENFL__assets_data_pressstart2p_ttf);
 		
 		
@@ -614,6 +617,8 @@ class DefaultAssetLibrary extends AssetLibrary {
 		
 		#if flash
 		
+		path.set ("assets/images/Textbox-long.png", "assets/images/Textbox-long.png");
+		type.set ("assets/images/Textbox-long.png", AssetType.IMAGE);
 		path.set ("assets/images/3.gif", "assets/images/3.gif");
 		type.set ("assets/images/3.gif", AssetType.IMAGE);
 		path.set ("assets/images/Textbox.png", "assets/images/Textbox.png");
@@ -653,6 +658,9 @@ class DefaultAssetLibrary extends AssetLibrary {
 		#elseif html5
 		
 		var id;
+		id = "assets/images/Textbox-long.png";
+		path.set (id, id);
+		type.set (id, AssetType.IMAGE);
 		id = "assets/images/3.gif";
 		path.set (id, id);
 		type.set (id, AssetType.IMAGE);
@@ -727,6 +735,7 @@ class DefaultAssetLibrary extends AssetLibrary {
 		#if (windows || mac || linux)
 		
 		var useManifest = false;
+		useManifest = true;
 		useManifest = true;
 		useManifest = true;
 		useManifest = true;
@@ -1487,6 +1496,7 @@ class DefaultAssetLibrary extends AssetLibrary {
 
 
 
+
 @:keep @:bind #if display private #end class __ASSET__flixel_sounds_beep_ogg extends null { }
 @:keep @:bind #if display private #end class __ASSET__flixel_sounds_flixel_ogg extends null { }
 @:keep @:bind #if display private #end class __ASSET__flixel_fonts_nokiafc22_ttf extends null { }
@@ -1496,6 +1506,7 @@ class DefaultAssetLibrary extends AssetLibrary {
 
 
 #elseif html5
+
 
 
 

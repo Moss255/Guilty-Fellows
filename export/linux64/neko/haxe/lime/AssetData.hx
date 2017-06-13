@@ -16,6 +16,8 @@ class AssetData {
 		
 		if (!initialized) {
 			
+			path.set ("assets/images/Textbox-long.png", "assets/images/Textbox-long.png");
+			type.set ("assets/images/Textbox-long.png", Reflect.field (AssetType, "image".toUpperCase ()));
 			path.set ("assets/images/3.gif", "assets/images/3.gif");
 			type.set ("assets/images/3.gif", Reflect.field (AssetType, "image".toUpperCase ()));
 			path.set ("assets/images/Textbox.png", "assets/images/Textbox.png");

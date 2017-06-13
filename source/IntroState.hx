@@ -29,7 +29,7 @@ class IntroState extends FlxState
 		introText[5] = "You only get 3 shots to guess who it is";
 		introText[6] = "Hopefully you can find the real culpurt";
 
-		introTxtBox = new TextBox("???", introText, "assets/sounds/Text.ogg", 8, (480 - (480 /4 )) - 200, 300);
+		introTxtBox = new TextBox("???", introText, "assets/sounds/Text.ogg", 9, 110, 320);
 
 		add(introTxtBox);
 		

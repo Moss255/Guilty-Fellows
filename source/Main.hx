@@ -9,6 +9,6 @@ class Main extends Sprite
 	{
 		super();
 		//Insertion point for the FlxGame
-		addChild(new FlxGame(0, 0, MenuState, 1, 30, 30, true, false));
+		addChild(new FlxGame(0, 0, MenuState, 1, 60, 60, true, false));
 	}
 }
