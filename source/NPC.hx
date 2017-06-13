@@ -25,7 +25,6 @@ class NPC extends FlxSprite
 
  		this.loadGraphic("assets/images/" + NewID + ".gif");
 
-		//this.makeGraphic(128, 128, FlxColor.RED);
 		this.x = 640 / 2 - 128;
 		this.y = 50;
 
@@ -39,11 +38,7 @@ class NPC extends FlxSprite
 		this.Text = tempNPC.text;
 		this.IsSuspect = tempNPC.suspect;
 
-		#if flash
-		this.txtbox = new TextBox(this.Name, this.Text, "assets/sounds/Text.mp3", 8, (480 - (480 / 4)) - 150, 300);
-		#else
 		this.txtbox = new TextBox(this.Name, this.Text, "assets/sounds/Text.ogg", 8, (480 - (480 / 4)) - 150, 300);
-		#end
 	}
 
 	public function getName():String
