@@ -48,6 +48,8 @@ class PlayState extends FlxState
 
 	private function suspectButton()
 	{
+		//var sound:FlxSound;
+		var sound = FlxG.sound.load("assets/sounds/Fail.ogg");
 		
 		if (CheckNPC())
 		{
@@ -59,7 +61,8 @@ class PlayState extends FlxState
 			}
 			else
 			{
-				
+				sound.volume = 0.75;
+				sound.play();
 				lives -= 1;
 				var txtArray:Array<String> = new Array<String>();
 				txtArray[0] = "You have to be kidding! It can't be them";

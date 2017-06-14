@@ -5,6 +5,7 @@ import openfl.Assets;
 import flixel.FlxSprite;
 import flixel.util.FlxColor;
 import haxe.Json;
+import flixel.math.FlxRandom;
 /**
  * ...
  * @author Jack
@@ -23,7 +24,14 @@ class NPC extends FlxSprite
 	{
 		super();
 
- 		this.loadGraphic("assets/images/" + NewID + ".gif");
+		var rnd:FlxRandom;
+
+		rnd = new FlxRandom();
+
+		rnd.resetInitialSeed();
+
+		this.makeGraphic(256, 256, rnd.color());
+ 		//this.loadGraphic("assets/images/" + NewID + ".gif");
 
 		this.x = 640 / 2 - 128;
 		this.y = 50;
@@ -38,7 +46,6 @@ class NPC extends FlxSprite
 		this.Text = tempNPC.text;
 		this.IsSuspect = tempNPC.suspect;
 
-		//this.txtbox = new TextBox(this.Name, this.Text, "assets/sounds/Text.ogg", 9, (480 - (480 / 4)) - 150, 300);
 		this.txtbox = new TextBox(this.Name, this.Text, "assets/sounds/Text.ogg", 9, 110, 320);
 	}
 
