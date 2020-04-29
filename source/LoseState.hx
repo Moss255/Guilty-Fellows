@@ -14,13 +14,19 @@ class LoseState extends FlxState
     public override function create()
     {
         super.create();
+
+        var bg = new FlxSprite(0, 0);
+
+		bg.loadGraphic('assets/images/bg.png');
+		
+		add(bg);
+
         TextArray = new Array<String>();
         TextArray[0] = "You couldn't find them!";
         TextArray[1] = "THAT OUTRAGEOUS!";
         TextArray[2] = "We are immidately taking you off the case!";
 
-
-        this.TxtBox = new TextBox("???", TextArray, "assets/sounds/Text.ogg", 9, 110, 320);
+        this.TxtBox = new TextBox("???", TextArray, "assets/sounds/Text.ogg", 20, 32, 368);
         
         add(this.TxtBox);
 

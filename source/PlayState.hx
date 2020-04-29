@@ -24,15 +24,20 @@ class PlayState extends FlxState
 	{
 		super.create();
 
+		var bg = new FlxSprite(0, 0);
+
+		bg.loadGraphic('assets/images/bg.png');
+		
+		add(bg);
+
 		lives = 3;
 
 		NPCcounter = 0;
 
 		switchButton = new Array<FlxButton>();
-		switchButton[0] = new FlxButton(20, 480 / 2, "<<", switchSubjectleft);
-		switchButton[1] = new FlxButton(640 - 100, 480 / 2, ">>", switchSubjectright);
-		//switchButton[2] = new FlxButton(640 / 2, 480 - 50, "Hear statement", playStatement);
-		switchButton[2] = new FlxButton(640 / 2 + 100, 480 - 50, "Suspect!", suspectButton);
+		switchButton[0] = new FlxButton(4, 164, "<<", switchSubjectleft);
+		switchButton[1] = new FlxButton(684, 156, ">>", switchSubjectright);
+		switchButton[2] = new FlxButton(316, 4, "Suspect!", suspectButton);
 		for (button in switchButton) 
 		{
 			add(button);
@@ -67,7 +72,7 @@ class PlayState extends FlxState
 				var txtArray:Array<String> = new Array<String>();
 				txtArray[0] = "You have to be kidding! It can't be them";
 
-				this.suspectTxtBox = new TextBox("???", txtArray, "assets/sounds/Text.ogg", 9, 110, 320);
+				this.suspectTxtBox = new TextBox("???", txtArray, "assets/sounds/Text.ogg", 20, 32, 368);
 
 				add(suspectTxtBox);
 				suspectTxtBox.play();
@@ -117,8 +122,10 @@ class PlayState extends FlxState
 		{
 			Peers.insert(i, new NPC(i));
 			add(Peers[i]);
+			Peers[i].visible = false;
 		}
 		currentNPC = Peers[NPCcounter];
+		currentNPC.visible = true;
 	}
 
 	private function switchSubjectleft():Void
@@ -126,9 +133,16 @@ class PlayState extends FlxState
 		
 		if (CheckNPC())
 		{
+			trace(currentNPC.gettxtBox().DialogPosition);
+
 			currentNPC.gettxtBox().reset();
-			remove(currentNPC.gettxtBox());
+
+			trace(currentNPC.gettxtBox().DialogPosition);
+
 			currentNPC.gettxtBox().SwitchedIsFinished();
+
+			trace(currentNPC.gettxtBox().DialogPosition);
+			currentNPC.visible = false;
 		}
 		
 		if (NPCcounter == 0)
@@ -141,7 +155,7 @@ class PlayState extends FlxState
 		}
 
 		currentNPC = Peers[NPCcounter];
-		add(currentNPC);
+		currentNPC.visible = true;
 	} 
 
 	private function switchSubjectright():Void
@@ -149,8 +163,8 @@ class PlayState extends FlxState
 		if (CheckNPC())
 		{
 			currentNPC.gettxtBox().reset();
-			remove(currentNPC.gettxtBox());
 			currentNPC.gettxtBox().SwitchedIsFinished();
+			currentNPC.visible = false;
 		}
 		
 
@@ -163,6 +177,7 @@ class PlayState extends FlxState
 			NPCcounter += 1;
 		}
 		currentNPC = Peers[NPCcounter];
+		currentNPC.visible = true;
 	}
 
 	public override function update(elapsed:Float):Void

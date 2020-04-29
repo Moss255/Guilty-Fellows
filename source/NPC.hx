@@ -30,11 +30,10 @@ class NPC extends FlxSprite
 
 		rnd.resetInitialSeed();
 
-		this.makeGraphic(256, 256, rnd.color());
- 		//this.loadGraphic("assets/images/" + NewID + ".gif");
+ 		this.loadGraphic("assets/images/P" + NewID + ".png");
 
-		this.x = 640 / 2 - 128;
-		this.y = 50;
+		this.x = 272;
+		this.y = 144;
 
 		Text = new Array<String>();
 
@@ -45,8 +44,8 @@ class NPC extends FlxSprite
 		this.Name = tempNPC.name;
 		this.Text = tempNPC.text;
 		this.IsSuspect = tempNPC.suspect;
-
-		this.txtbox = new TextBox(this.Name, this.Text, "assets/sounds/Text.ogg", 9, 110, 320);
+		
+		this.txtbox = new TextBox(this.Name, this.Text, "assets/sounds/Text.ogg", 20, 32, 368);
 	}
 
 	public function getName():String

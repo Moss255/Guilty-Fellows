@@ -9,14 +9,14 @@
     { 
    "id" : 1,
    "name" : "Saul",
-   "text" : ["The way I see, I think Katy is innocent, so is Hannah and Jessica. But I wouldn't trust that Mossy character. He is trouble."],
+   "text" : ["The way I see, I think Katy is innocent, so is Hannah and Jessica. But I wouldn't trust that Muhammad character. He is trouble."],
    "suspect" : false
    }, 
 
    {
     "id" : 2,
    "name" : "Jessica",
-   "text" : ["Emily, she is innocent, I bet you.", "And Mossy... He is a dick, He is completely guilty"],
+   "text" : ["Emily, she is innocent, I bet you.", "And Muhammad... He is a dick, He is completely guilty"],
    "suspect" : false
    },
 
@@ -30,13 +30,13 @@
     {
     "id" : 4,
    "name" : "Hannah",
-   "text" : ["Mossy, he is bad news, but Katy she is alright."],
+   "text" : ["Muhammad, he is bad news, but Katy she is alright."],
    "suspect" : false
    },
 
     {
     "id" : 5,
-   "name" : "Mossy",
+   "name" : "Muhammad",
    "text" : ["Thanks for playing the game, unfortunately, I don't really have anything to say, I mean I think katy wouldn't hurt a fly but that is about it.", "And I am not going to lie, Emily is quite cute, so I bet she is innocent."],
    "suspect" : false
    },
@@ -44,14 +44,14 @@
     {
     "id" : 6,
    "name" : "Emily",
-   "text" : ["If you ask me, Harley and Kiran are totally not innocent. You can see it in their faces, but Mossy, he's cool."],
+   "text" : ["If you ask me, Harley and Kiran are totally not innocent. You can see it in their faces, but Muhammad, he's cool."],
    "suspect" : true
    },
 
    {
      "id" : 7,
    "name" : "Pie",
-   "text" : ["See, I wouldn't trust Emily, but that is between me and you alright?", "And Mossy is great, so come on! why would it be him?"],
+   "text" : ["See, I wouldn't trust Emily, but that is between me and you alright?", "And Muhammad is great, so come on! why would it be him?"],
    "suspect" : false
    }
 ]

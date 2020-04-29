@@ -14,14 +14,21 @@ class WinState extends FlxState
     public override function create()
     {
         super.create();
-        TextArray = new Array<String>();
 
+        var bg = new FlxSprite(0, 0);
+
+		bg.loadGraphic('assets/images/bg.png');
+		
+		add(bg);
+
+        TextArray = new Array<String>();
+        
         TextArray[0] = "You got me...";
         TextArray[1] = "I throw up my hands";
         TextArray[2] = "You may have got me...";
         TextArray[3] = "But you will never stop our plans!";
 
-        this.TxtBox = new TextBox("Emma", TextArray, "assets/sounds/Text.ogg", 9, 110, 320);
+        this.TxtBox = new TextBox("Emily", TextArray, "assets/sounds/Text.ogg", 20, 32, 368);
 
         add(this.TxtBox);
 

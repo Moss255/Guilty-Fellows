@@ -25,7 +25,7 @@ class TextBox extends FlxState
 	private var TextToDisplay:Array<String>;
 	private var TextArray:Array<String>;
 	private var textBoxOutline:FlxSprite;
-	private var DialogPosition:Int;
+	public var DialogPosition:Int;
 	private var DialogMax:Int;
 	private var fontSize:Int;
 	private var textName:String;
@@ -65,17 +65,15 @@ class TextBox extends FlxState
 		this.textblip.loadStream(SoundFile, true, false);
 		add(this.textblip);
 
-		this.textBox = new FlxSprite(X - 40, Y - 60, "assets/images/Textbox-long.png");
-
 
 		
-		this.measureText = new FlxText(X, Y, 300, TextToDisplay[DialogPosition], fontSize);
+		this.measureText = new FlxText(X, Y, 690, TextToDisplay[DialogPosition], fontSize);
 		this.measureText.setFormat("assets/data/PressStart2P.ttf", fontSize, FlxColor.WHITE);
 		
 
-		this.fontText = new FlxTypeText(X, Y, 400, TextToDisplay[DialogPosition], fontSize, false);
+		this.fontText = new FlxTypeText(X, Y, 690, TextToDisplay[DialogPosition], fontSize, false);
 
-		this.fontText.setFormat("assets/data/PressStart2P.ttf", fontSize, FlxColor.fromRGB(87, 65, 47, 255));
+		this.fontText.setFormat("assets/data/PressStart2P.ttf", fontSize, FlxColor.WHITE);
 		
 		this.txtFinshed = false;
 		
@@ -83,12 +81,12 @@ class TextBox extends FlxState
 
 	public function play():Void
 	{
-		add(this.textBox);
+		//add(this.textBox);
 		add(this.fontText);
 		
 
 		this.fontText.start(0.02, true, false, null, ReportFinish);
-		this.textblip.play(true, 0);
+		//this.textblip.play(true, 0);
 	}
 
 	public function checkDialogMax():Bool
@@ -121,7 +119,7 @@ class TextBox extends FlxState
 		resetText();
 		
 		this.fontText.start(0.02, true, false, null, ReportFinish);
-		this.textblip.play(true, 0);
+		//this.textblip.play(true, 0);
 	}
 
 	private function resetText():Void
@@ -129,8 +127,8 @@ class TextBox extends FlxState
 		remove(this.fontText);
 		this.fontText = null;
 
-		this.fontText = new FlxTypeText(X, Y, 400, TextToDisplay[DialogPosition], fontSize, false);
-		this.fontText.setFormat("assets/data/PressStart2P.ttf", fontSize, FlxColor.fromRGB(87, 65, 47, 255));
+		this.fontText = new FlxTypeText(X, Y, 690, TextToDisplay[DialogPosition], fontSize, false);
+		this.fontText.setFormat("assets/data/PressStart2P.ttf", fontSize, FlxColor.WHITE);
 
 		add(this.fontText);
 
@@ -141,7 +139,7 @@ class TextBox extends FlxState
 		remove(this.textBox);
 		remove(this.fontText);
 
-		this.textblip.stop();
+		//this.textblip.stop();
 		this.DialogPosition = 0;
 	}
 	
@@ -158,6 +156,6 @@ class TextBox extends FlxState
 	private function ReportFinish():Void
 	{
 		this.SwitchedIsFinished();
-		this.textblip.stop();
+		//this.textblip.stop();
 	}
 }

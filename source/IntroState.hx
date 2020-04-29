@@ -1,5 +1,8 @@
 package;
 
+import openfl.events.MouseEvent;
+import openfl.ui.Mouse;
+import flixel.FlxSprite;
 import flixel.FlxState;
 import flixel.text.FlxText;
 import flixel.input.gamepad.FlxGamepad;
@@ -19,6 +22,12 @@ class IntroState extends FlxState
 	public override function create() 
 	{
 		super.create();
+
+		var bg = new FlxSprite(0, 0);
+
+		bg.loadGraphic('assets/images/bg.png');
+		
+		add(bg);
 		
 		introText = new Array<String>();
 		introText[0] = "There is a traitor in our mits";
@@ -29,7 +38,7 @@ class IntroState extends FlxState
 		introText[5] = "You only get 3 shots to guess who it is";
 		introText[6] = "Hopefully you can find the real culpurt";
 
-		introTxtBox = new TextBox("???", introText, "assets/sounds/Text.ogg", 9, 110, 320);
+		introTxtBox = new TextBox("???", introText, "assets/sounds/Text.ogg", 20, 32, 368);
 
 		add(introTxtBox);
 		
@@ -37,10 +46,13 @@ class IntroState extends FlxState
 		
 		helpText = new FlxText();
 		helpText.text = "click to continue";
-		helpText.x = 640 / 2 - helpText.text.length * 8;
-		helpText.y = 480 - 30;
+		helpText.x = 292;
+		helpText.y = 452;
 		helpText.setFormat("assets/data/PressStart2P.ttf", 11, FlxColor.WHITE, CENTER);
 		add(helpText);
+
+		trace(FlxG.mouse.x);
+		trace(FlxG.mouse.y);
 
 	}
 	
