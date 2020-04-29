@@ -1,12 +1,7 @@
 # Guilty-Fellows
-This game was designed and coded by Jack Moss in June 2017
 
-Class Explaination
-________________________________________________________________________
+This was a small game project I used in my portfolio back in 2017 to apply for some universities.
 
-Dialog.hx - Displays the text for the textbox.
-DialogManager.hx - Manages the loading and saving of the dialog.
-IntroState.hx - The first screen the player sees before after the menu - sets the seen
-Main.hx - Entry point for the program
-MenuState.hx - Starting screen for the player, just has a go button, for now.
-NPC.hx - Manages the NPC
+I was inspired to use Haxe after seeing it was used on Papers, Please.
+
+The language is pretty cool ngl, many of the art assets are missing from this game but the proof of concept is there.
