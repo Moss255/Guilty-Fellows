@@ -18,6 +18,7 @@ class NPC extends FlxSprite
 	private var Iscontact:Bool;
 	private var dialogControl:DialogManager;
 	private var IsSuspect:Bool;
+	private var dialogLines:Int;
 
 	
 	public function new(NewID:Int) 
@@ -39,7 +40,7 @@ class NPC extends FlxSprite
 
 		dialogControl = new DialogManager("assets/data/Characters.json");
 
-		var tempNPC = dialogControl.LoadDialog(NewID);
+		var tempNPC = this.dialogControl.LoadDialog(NewID);
 		
 		this.Name = tempNPC.name;
 		this.Text = tempNPC.text;

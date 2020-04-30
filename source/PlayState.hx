@@ -133,15 +133,10 @@ class PlayState extends FlxState
 		
 		if (CheckNPC())
 		{
-			trace(currentNPC.gettxtBox().DialogPosition);
-
 			currentNPC.gettxtBox().reset();
 
-			trace(currentNPC.gettxtBox().DialogPosition);
-
 			currentNPC.gettxtBox().SwitchedIsFinished();
-
-			trace(currentNPC.gettxtBox().DialogPosition);
+			
 			currentNPC.visible = false;
 		}
 		

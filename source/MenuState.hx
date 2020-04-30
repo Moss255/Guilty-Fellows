@@ -8,7 +8,6 @@ import flixel.text.FlxText;
 import flixel.util.FlxColor;
 import flixel.ui.FlxButton;
 import flixel.math.FlxMath;
-import flixel.input.gamepad.FlxGamepad;
 
 class MenuState extends FlxState
 {
@@ -24,7 +23,7 @@ class MenuState extends FlxState
 		super.create();
 		
 		// Instantiates the array which stores the menubuttons
-		playButton = new FlxButton(640 / 2 , 480 / 2, "Play", playButtonPressed);
+		playButton = new FlxButton(300 , 240, "Play", playButtonPressed);
 
 		// Adds the menu buttons to the State
 		playButton.scale.x = 1.5;

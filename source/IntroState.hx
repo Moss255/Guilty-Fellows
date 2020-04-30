@@ -51,16 +51,11 @@ class IntroState extends FlxState
 		helpText.setFormat("assets/data/PressStart2P.ttf", 11, FlxColor.WHITE, CENTER);
 		add(helpText);
 
-		trace(FlxG.mouse.x);
-		trace(FlxG.mouse.y);
-
 	}
 	
 	public override function update(elapsed:Float):Void
 	{
 		super.update(elapsed);
-		
-		var gamepad = FlxG.gamepads.lastActive;
 		
 		if (FlxG.mouse.justReleased)
 		{
